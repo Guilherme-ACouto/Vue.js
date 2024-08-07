@@ -1,5 +1,5 @@
 <template>
-  <br>
+  
   <div class="header">
     <button @click="exportToExcel">Sair</button>
     <button @click="exportToExcel">Excel</button>
@@ -29,12 +29,13 @@ export default {
 .header {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px; /* Reduzir o espaçamento entre os elementos */
   background-color: #d3d3d3; /* Cor de fundo cinza escuro */
-  padding: 20px; /* Adiciona algum espaçamento interno */
+  padding: 10px; /* Reduzir o espaçamento interno */
   border-radius: 5px; /* Adiciona bordas arredondadas */
   position: relative; /* Define a base para o posicionamento absoluto */
-  border: 2px solid #696969; /* Borda cinza escura ao redor do contêiner - ajustável */
+  max-width: 1696px; /* Define uma largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
 }
 
 .filter-input {
@@ -42,7 +43,7 @@ export default {
   border: 2px solid #ccc; /* Borda cinza clara - ajustável */
   border-radius: 10px;
   position: absolute;
-  top: 40px; /* Mantém a posição do filtro */
+  top: 12px; /* Mantém a posição do filtro */
   right: 40px; /* Ajusta a posição do filtro para a esquerda */
   margin-left: 10px;
   z-index: 1; /* Garante que o filtro não se sobreponha aos botões */
@@ -51,8 +52,8 @@ export default {
 button {
   background-color: #ffffff; /* Cor de fundo branca para os botões */
   border: 2px solid #696969; /* Borda cinza escura para os botões - ajustável */
-  padding: 10px;
-  margin: 5px;
+  padding: 5px; /* Reduzir o espaçamento interno dos botões */
+  margin: 3px; /* Reduzir a margem entre os botões */
   border-radius: 5px;
   cursor: pointer;
   color: #333333; /* Cor do texto dos botões para contraste */

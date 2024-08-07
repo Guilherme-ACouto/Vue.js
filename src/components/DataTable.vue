@@ -1,5 +1,6 @@
 <template>
   <br>
+  <br>
   <div class="data-table-container">
     <div class="data-table">
       <div class="filter-options">
@@ -86,14 +87,17 @@ export default {
 </script>
 
 <style scoped>
+
 .data-table-container {
   width: 95%; /* Ajuste para ocupar a maior parte da tela */
   margin: 0 auto; /* Centraliza o contêiner */
+  
 }
 
 .data-table {
   width: 100%; /* A tabela ocupa toda a largura do contêiner */
   overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  
 }
 
 table {
@@ -123,5 +127,10 @@ td {
   text-align: center; /* Centraliza o texto na célula */
   color: #696969; /* Cor do texto */
   padding: 20px; /* Adiciona algum espaçamento interno */
+}
+
+.filter-options {
+  border: 2px solid #696969;
+  padding: 10px;
 }
 </style>
